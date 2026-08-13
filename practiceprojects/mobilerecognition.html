@@ -1,0 +1,11 @@
+<script>
+/* returns a true value if device has a touch screen no matter what 
+type of device it is */ 
+var isTouchScreen = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+if(isTouchScreen === true) {
+alert("You are using a touch screen")
+} else {
+ alert("You are not using a touch screen")
+}
+</script>
