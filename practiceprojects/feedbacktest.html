@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Feedback Section</title>
+    <link rel="stylesheet" href="stylefeedback.css">
+</head>
+<body>
+
+    <div class="feedback-container">
+        <h2>We Value Your Feedback</h2>
+        
+        <!-- Feedback Form -->
+        <form id="feedbackForm">
+            <label for="userName">Name:</label><br>
+            <input type="text" id="userName" placeholder="Your Name" required>
+            
+            <label for="userComment">Feedback:</label><br>
+            <textarea id="userComment" placeholder="Write your feedback here..." rows="4" required></textarea>
+            
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Feedback Display Area -->
+        <div class="feedback-list-wrapper">
+            <h3>Recent Submissions</h3>
+            
+            
+            <div class="feedback-controls" style="margin-bottom: 15px; display: flex; justify-content: space-between; gap: 10px; align-items: center;">
+                <span id="feedbackCounter" style="font-weight: bold; font-size: 0.95em;">Total Reviews: 0</span>
+                <input type="text" id="feedbackSearch" placeholder="Search feedback..." style="padding: 6px; width: 60%; max-width: 250px;">
+            </div>
+        
+            <div id="feedbackList">
+                <p class="no-feedback">No feedback submitted yet.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
