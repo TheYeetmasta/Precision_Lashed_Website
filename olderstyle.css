@@ -134,8 +134,8 @@ button:active {
 }
 .logotext{
   font-family: 'Comfortaa', sans-serif;
-  font-size:2em ;
-  margin-top:28px ;
+  font-size:1.5em ;
+  margin-top:18px ;
   margin-bottom: 30px;
   float:left
 }
@@ -306,7 +306,7 @@ font-family: 'Comfortaa', sans-serif;
 }
 .logoimg{
   cursor: pointer;
-  height: 80px;
+  height: 50px;
   margin-top:8px ;
   margin-left: 10px;
   margin-right: 10px;
@@ -627,91 +627,4 @@ form input, form textarea {
 
 .text5{
   padding:50px;
-}
-  .layout { padding: 1rem; }
-@media (min-width: 768px) {
-  .layout { display: grid; grid-template-columns: 240px 1fr; }
-}
-
-@media screen and (max-width: 768px) {
-  
- 
-  body {
-    border: 10px solid #F3EBE0;
-  }
-
-  .flex-container, .flex-item, .image2, .image4,
-  .practicediepio, .geometrymath, .mobilepracticediepio, .mobilegeometrymath {
-    width: 90% !important;
-    max-width: 500px;
-    height: auto !important;
-    aspect-ratio: 1 / 1; 
-  }
-
-  
-  .image2, .image4 {
-    aspect-ratio: 4 / 3;
-  }
-
-
-  h1 { font-size: 2em; }
-  h2 { font-size: 2.8em; }
-  .mobiletext1 { font-size: 2.2em; }
-  .mobiletext2 { font-size: 1.5em; }
-  
-  
-  .mobiletext3, .mobiletext4 { 
-    font-size: 3.5em !important; 
-  }
-  
-  .mobiletext4, .text3, .text4 {
-    margin-top: 40px !important;
-  }
-  
-  .text4 {
-    font-size: 2em;
-  }
-
-  .div2, .div3, .image4, 
-  .practicediepio, .geometrymath, 
-  .mobilepracticediepio, .mobilegeometrymath,
-  .selectionbutton1, .selectionbutton2,
-  button, .dropbtn, .contentbtn, .dropdown {
-    float: none !important;
-    margin: 15px auto !important;
-    display: block !important;
-    left: auto !important;
-    right: auto !important;
-  }
-
-  ol li {
-    width: 80%;
-    padding: 5%;
-  }
-
-  .feedback-container {
-    width: 95%;
-    padding: 15px;
-  }
-
-  .dropbtn, .contentbtn {
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  .dropdown {
-    width: 90%;
-    max-width: 300px;
-  }
-
-  .dropdown-content {
-    position: relative;
-    margin-top: 10px;
-    width: 100%;
-  }
-  
-  .divbar {
-    height: auto;
-    padding: 10px 0;
-  }
 }

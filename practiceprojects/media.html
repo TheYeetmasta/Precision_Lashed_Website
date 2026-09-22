@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile-First Responsive Layout Demo</title>
+  <style>
+    /* ==========================================================
+       GLOBAL STYLES & RESET
+       ========================================================== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f6f8;
+    }
+
+    /* Screen width indicator box (For testing visibility) */
+    .viewport-indicator {
+      background-color: #2b3a42;
+      color: #fff;
+      text-align: center;
+      padding: 0.75rem;
+      font-weight: bold;
+    }
+    .viewport-indicator::after {
+      content: "Mobile View (Simulate 375px)";
+    }
+
+    /* ==========================================================
+       1. DEFAULT MOBILE STYLES (Applies to 375px)
+       ========================================================== */
+    .layout {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .sidebar {
+      background-color: #e2e8f0;
+      border: 2px dashed #94a3b8;
+      border-radius: 8px;
+      padding: 1.5rem;
+    }
+
+    .main-content {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    /* ==========================================================
+       2. RESPONSIVE BREAKPOINT (Applies to 1280px)
+       ========================================================== */
+    @media (min-width: 768px) {
+      .viewport-indicator::after {
+        content: "Desktop View (Simulate 1280px)";
+      }
+      
+      .layout {
+        display: grid;
+        /* Sidebar is exactly 240px wide, content occupies 1 fractional unit */
+        grid-template-columns: 240px 1fr;
+        gap: 1.5rem;
+        padding: 2rem;
+      }
+
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dynamic banner that tells you which style block is active -->
+  <div class="viewport-indicator">Active Breakpoint: </div>
+
+  <!-- The Core Responsive Container -->
+  <div class="layout">
+    
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #475569;">
+        Fixed 240px columns are unlocked only on screens larger than 768px wide.
+      </p>
+    </aside>
+
+    <main class="main-content">
+      <h1>Main Content</h1>
+      <p style="margin-top: 1rem;">
+        This block dynamically wraps and scales depending on your viewport width. 
+      </p>
+      <div style="background: #f1f5f9; padding: 1rem; border-radius: 6px; margin-top: 1rem; font-family: monospace; font-size: 0.85rem;">
+        Resize your browser window below 768px to see it collapse instantly into a clean mobile layout.
+      </div>
+    </main>
+
+  </div>
+
+</body>
+</html>
