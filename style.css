@@ -70,6 +70,21 @@ color:rgb(0, 0, 0);
   right:0px;
   z-index:-1;
 }
+ .logotext{
+  font-family: 'Comfortaa', sans-serif;
+  font-size:2em ;
+  margin-top:28px ;
+  margin-bottom: 30px;
+  float:left !important;
+} 
+.logoimg{
+  height: 100px;
+  margin-right: 10px;
+  margin-bottom:30px;
+  border: 2px solid white; 
+  float:left !important;
+  z-index: 9999;
+}
 .bookbutton1{
   display: flex;
   align-items: center;
@@ -132,14 +147,6 @@ button:active {
   transform: translateY(5px);
   transition: 100ms;
 }
-.logotext{
-  font-family: 'Comfortaa', sans-serif;
-  font-size:2em ;
-  margin-top:28px ;
-  margin-bottom: 30px;
-  float:left
-}
-
 .div1{
   width:100%;
   height:fit-content ;
@@ -303,17 +310,6 @@ font-family: 'Comfortaa', sans-serif;
   rotate:30deg ;
   border: 2px solid white; 
   float:right;
-}
-.logoimg{
-  cursor: pointer;
-  height: 80px;
-  margin-top:8px ;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom:30px;
-  border: 2px solid white; 
-  float:left;
-  
 }
 .mobilenavbar{
   float:left;
@@ -642,9 +638,9 @@ form input, form textarea {
 
   .flex-container, .flex-item, .image2, .image4,
   .practicediepio, .geometrymath, .mobilepracticediepio, .mobilegeometrymath {
-    width: 90% !important;
+    width: 90% ;
     max-width: 500px;
-    height: auto !important;
+    height: auto ;
     aspect-ratio: 1 / 1; 
   }
 
@@ -661,11 +657,11 @@ form input, form textarea {
   
   
   .mobiletext3, .mobiletext4 { 
-    font-size: 3.5em !important; 
+    font-size: 3.5em ; 
   }
   
   .mobiletext4, .text3, .text4 {
-    margin-top: 40px !important;
+    margin-top: 40px ;
   }
   
   .text4 {
@@ -677,11 +673,11 @@ form input, form textarea {
   .mobilepracticediepio, .mobilegeometrymath,
   .selectionbutton1, .selectionbutton2,
   button, .dropbtn, .contentbtn, .dropdown {
-    float: none !important;
-    margin: 15px auto !important;
-    display: block !important;
-    left: auto !important;
-    right: auto !important;
+    float: none ;
+    margin: 15px auto ;
+    display: block ;
+    left: auto ;
+    right: auto ;
   }
 
   ol li {
@@ -695,7 +691,7 @@ form input, form textarea {
   }
 
   .dropbtn, .contentbtn {
-    width: 100% !important;
+    width: 100% ;
     box-sizing: border-box;
   }
 
@@ -725,12 +721,12 @@ form input, form textarea {
   .dropdown,
   .div5,
   .div1 {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 8px !important; /* Creates a clean gap between adjacent buttons */
-    width: 100% !important;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: center ;
+    align-items: center ;
+    gap: 8px; /* Creates a clean gap between adjacent buttons */
+    width: 100% ;
   }
 
   /* 2. Style overrides to make sure buttons shrink enough to sit horizontally */
@@ -739,23 +735,23 @@ form input, form textarea {
   .contentbtn, 
   .selectionbutton1, 
   .selectionbutton2 {
-    display: inline-flex !important;
-    float: left !important;
-    width: auto !important; /* Stops buttons from greedy full-width behavior */
+    display: inline-flex ;
+    float: left ;
+    width: auto ; /* Stops buttons from greedy full-width behavior */
     flex: 1; /* Forces buttons to share the available horizontal space equally */
     
     /* Scale down spacing and text sizes so they don't break onto multiple lines */
-    font-size: 11px !important; 
-    padding: 10px 12px !important; 
-    margin: 0 !important; 
+    font-size: 11px ; 
+    padding: 10px 12px ; 
+    margin: 0 ; 
     white-space: nowrap; /* Prevents button words from wrapping vertically */
-    letter-spacing: 0.5px !important;
+    letter-spacing: 0.5px ;
   }
 
   /* Adjust dropdown wrapper components to match the grid line */
   .dropdown {
-    margin: 0 !important;
-    max-width: 50% !important;
+    margin: 0 ;
+    max-width: 50% ;
   }
 
   .dropdown-content {

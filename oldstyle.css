@@ -305,10 +305,7 @@ font-family: 'Comfortaa', sans-serif;
   float:right;
 }
 .logoimg{
-  cursor: pointer;
-  height: 80px;
-  margin-top:8px ;
-  margin-left: 10px;
+  height: 100px;
   margin-right: 10px;
   margin-bottom:30px;
   border: 2px solid white; 
